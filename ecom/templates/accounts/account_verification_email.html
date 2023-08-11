@@ -1,0 +1,6 @@
+{% autoescape off %}
+Hi,{{user.first_email}}
+Please click on below link to confirm your registeration
+http://{{ domain }}{% url 'activate' uibd64=uid token=token %}
+if you think its not you  ignore email
+{% endautoescape %}
